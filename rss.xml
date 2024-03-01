@@ -4,7 +4,7 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Fri, 01 Mar 2024 04:24:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Mar 2024 04:29:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
         <item>
@@ -222,31 +222,6 @@ token:<br />
 <span class="hljs-meta">  #</span><span class="language-bash"><span class="hljs-comment"># and more memory efficient.</span></span>
 <span class="hljs-meta">  # </span><span class="language-bash">parser_type = <span class="hljs-string">"internal"</span></span>
 </code></pre></div>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[QNAP NAS 建L2TP/IPSec VPN]]></title>
-            <guid>a2da1c58921f47558142e38f734cb3a9</guid>
-            <pubDate>Tue, 29 Dec 2020 00:38:54 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="win10-使用l2tp-需改注册表">win10 使用l2tp 需改注册表</h2>
-<ul>
-<li>默认只能链接HTTPS加密的服务器，修改后可连HTTP<br />
-Windows Registry Editor Version 5.00</li>
-</ul>
-<p>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent]</p>
-<p>“AssumeUDPEncapsulationContextOnSendRule”=dword:00000002</p>
-<h2 id="nas-配置">nas 配置</h2>
-<p><img src="/_resources/d2d0af5db16c411c9ee2eca024691321.png" /></p>
-<h2 id="路由器nat启用端口">路由器nat启用端口</h2>
-<p>QVPN（L2TP/IPSec 服务器）UDP 500、4500、1701</p>
-<h2 id="win-vpn配置">win vpn配置</h2>
-<p>glpi.vpn333333<br />
-<img src="/_resources/f5031f4676e348c49af0bc0b0cb3239c.png" /><br />
-<img src="/_resources/74f1f07fb0e34896abcf4c204615fd8e.png" /></p>
-<p>L2TP VPN 连接后,可连3.1<br />
-需要nas防火墙开通白名单,加入L2TP VPN 分配的IP172.31.32.0/24后才能正常连3.7以及上网</p>
-<p>qnap 服务端口大全<br />
-<a title="https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html" href="https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html">https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html</a></p>
 ]]></content:encoded>
         </item>
     </channel>
