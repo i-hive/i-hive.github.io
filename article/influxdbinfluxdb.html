@@ -1,114 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-    <channel>
-        <title></title>
-        <link>undefined</link>
-        <description>undefined</description>
-        <lastBuildDate>Fri, 01 Mar 2024 03:29:04 GMT</lastBuildDate>
-        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>Joplin Pages Publisher</generator>
-        <item>
-            <title><![CDATA[HUGO MD文件的格式]]></title>
-            <guid>cc7a26975b474190b38b88329edb0bc1</guid>
-            <pubDate>Fri, 09 Jun 2023 14:25:59 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="md文件格式">MD文件格式</h2>
-<p>一篇文章的分类,关键字,标签,都可以预先在MD文件中填写<br />
-前缀可以用+++或—来分割</p>
-<div><pre class="hljs"><code><span class="hljs-meta">---</span>
-<span class="hljs-attr">title:</span> <span class="hljs-string">"我的第一篇博客"</span>                         
-<span class="hljs-attr">author:</span> <span class="hljs-string">"我是作者"</span>  
-<span class="hljs-attr">description :</span> <span class="hljs-string">"这是描述信息"</span>    
-<span class="hljs-attr">date:</span> <span class="hljs-number">2018-09-18</span>        
-<span class="hljs-attr">lastmod:</span> <span class="hljs-number">2018-09-26</span>             
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
 
-<span class="hljs-attr">tags :</span> [                                    
-<span class="hljs-string">"我的博客标签1"</span>,<span class="hljs-string">"我的博客标签2"</span>
-]
-<span class="hljs-attr">categories :</span> [                              
-<span class="hljs-string">"我的博客分类1"</span>,<span class="hljs-string">"我的博客分类2"</span>
-]
-<span class="hljs-attr">keywords :</span> [                                
-<span class="hljs-string">"我的博客关键字1"</span>,<span class="hljs-string">"我的博客关键字2"</span>,
-]
-<span class="hljs-meta">---</span>
-<span class="hljs-string">这里是Markdown</span> <span class="hljs-string">正文</span></code></pre></div>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[HUGO 静态网站服务]]></title>
-            <guid>bcd3726f01c84f518b0e569c365b210f</guid>
-            <pubDate>Thu, 08 Jun 2023 13:22:49 GMT</pubDate>
-            <content:encoded><![CDATA[<ul>
-<li>优点:GO语言,单文件,易发布</li>
-<li>即时性:当你发布网页之后,修改原始MD文件,网页会立刻随之变动</li>
-</ul>
-<h2 id="hugo下载地址">HUGO下载地址</h2>
-<p><a title="https://github.com/gohugoio/hugo/releases" href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a><br />
-如果需要git来下载主题,还需要下载安装git,也可以不用git,直接下载<br />
-<a title="https://git-scm.com/download/win" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
-<h2 id="运行">运行</h2>
-<p>CMD CD 进入hugo目录</p>
-<h3 id="新建网站">新建网站</h3>
-<p><code>hugo new site quickstart</code> 此命令后会生成一个网站目录<br />
-<img src="/_resources/0f08d354302342c9a18a59af5a3e9c7b.png" /></p>
-<h3 id="添加path">添加path</h3>
-<p>每次<code>path = %path%;d:\hugo\hugo</code>或者进系统设置加path</p>
-<h3 id="新建文章cd-进quickstart-目录">新建文章,CD 进quickstart 目录</h3>
-<p><code>hugo new post\hugo.md</code></p>
-<ul>
-<li>此目录D:\HUGO\hugo\quickstart\content\post内会出现一个hugo.md文件<br />
-默认发布的目录是网站目录的content\post内</li>
-</ul>
-<h2 id="主题下载">主题下载</h2>
-<p><a title="https://themes.gohugo.io/" href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 到官网寻找主题</p>
-<ul>
-<li>如果没有主题,则hugo无法显示任何网页,主题是必须的</li>
-</ul>
-<h3 id="1使用git下载主题">1:使用git下载主题</h3>
-<ul>
-<li>CD 进quickstart 目录<br />
-<code>git clone https://github.com/alanorth/hugo-theme-bootstrap4-blog.git themes/hugo-theme-bootstrap4-blog</code><br />
-<code>git clone https://github.com/rujews/maupassant-hugo themes/maupassant</code></li>
-</ul>
-<p>即<code>git clone github主题网址.git themes/主题名</code></p>
-<ul>
-<li>CD 进quickstart\themes目录<br />
-<code>git clone https://github.com/yihui/hugo-xmin.git</code></li>
-</ul>
-<h3 id="hugo-xmin-效果极致精简">hugo-xmin 效果,极致精简</h3>
-<p><img src="/_resources/9e6667ecf7c94866a8d6cc08ce0a67c4.png" /><br />
-git clone <a title="https://github.com/avianto/hugo-kiera" href="https://github.com/avianto/hugo-kiera">https://github.com/avianto/hugo-kiera</a> kiera<br />
-<code>git clone  https://github.com/serkodev/holy.git</code></p>
-<h3 id="2或者直接在github下载zip压缩包后解压到quickstartthemes目录">2:或者直接在github下载zip压缩包后解压到quickstart\themes目录</h3>
-<h2 id="主题使用">主题使用</h2>
-<p>quickstart\hugo.toml<br />
-添加<code>theme = "主题名"</code></p>
-<h3 id="编译网页将md文件编译为html静态页面">编译网页,将md文件编译为html静态页面</h3>
-<p><code>hugo</code></p>
-<h3 id="启动网站">启动网站</h3>
-<ul>
-<li>
-<p><code>hugo server</code>包含了编译和发布网站<br />
-<code>hugo server --theme=主题名</code>或<code>hugo server -t 主题名</code><br />
-<code>hugo server --theme=hyde</code><br />
-如果已经在toml文件中指定主题,则可以直接<code>hugo server</code>启动网站</p>
-</li>
-<li>
-<p>注意:发布网页默认是不包含草稿的,而新建md时,默认其为草稿<br />
-删去md文件中<code>draft: true</code>这句,表示其非草稿.这样网页才能显示出来<br />
-<code>hugo server --buildDrafts -t hyde</code> 表示草稿也一起发布<br />
-hugo server -t hugo-xmin<br />
-hugo server -t hugo-theme-bootstrap4-blog</p>
-</li>
-</ul>
-<p>hugo server -t maupassant -p 1313</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[本地influxdb同步到云influxdb]]></title>
-            <guid>1ee771f03c5f4b77a77d7b4cefe12368</guid>
-            <pubDate>Wed, 17 May 2023 00:54:21 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a type="application/octet-stream" href="/_resources/66a9e03e1837465489aad96500b18294.">network</a></p>
+    <title>本地influxdb同步到云influxdb - joplin</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">joplin</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">本地influxdb同步到云influxdb</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1684284861190"
+                  >2023-05-17 08:54</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1709263444260"
+                  >2024-03-01 11:24</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p><a type="application/octet-stream" href="/_resources/66a9e03e1837465489aad96500b18294.">network</a></p>
 <p><a type="application/x-msdownload" href="/_resources/38570fad218c4573b815188f5c7aa8ab.exe">pageant.exe</a>云influxdb API:<br />
 3wLP6wZzCIo72C8Oo-qnm6jAuNRsmxM2vsiFhINpnC4wQQGDA3AUg0RLXrVmgr4kXMLs039X5NB3yglZnpuhOw==</p>
 <h2 id="通过定时任务运行flux命令来同步数据库">通过定时任务运行flux命令来同步数据库</h2>
@@ -222,32 +146,8 @@ token:<br />
 <span class="hljs-meta">  #</span><span class="language-bash"><span class="hljs-comment"># and more memory efficient.</span></span>
 <span class="hljs-meta">  # </span><span class="language-bash">parser_type = <span class="hljs-string">"internal"</span></span>
 </code></pre></div>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[QNAP NAS 建L2TP/IPSec VPN]]></title>
-            <guid>a2da1c58921f47558142e38f734cb3a9</guid>
-            <pubDate>Tue, 29 Dec 2020 00:38:54 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="win10-使用l2tp-需改注册表">win10 使用l2tp 需改注册表</h2>
-<ul>
-<li>默认只能链接HTTPS加密的服务器，修改后可连HTTP<br />
-Windows Registry Editor Version 5.00</li>
-</ul>
-<p>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent]</p>
-<p>“AssumeUDPEncapsulationContextOnSendRule”=dword:00000002</p>
-<h2 id="nas-配置">nas 配置</h2>
-<p><img src="/_resources/d2d0af5db16c411c9ee2eca024691321.png" /></p>
-<h2 id="路由器nat启用端口">路由器nat启用端口</h2>
-<p>QVPN（L2TP/IPSec 服务器）UDP 500、4500、1701</p>
-<h2 id="win-vpn配置">win vpn配置</h2>
-<p>glpi.vpn333333<br />
-<img src="/_resources/f5031f4676e348c49af0bc0b0cb3239c.png" /><br />
-<img src="/_resources/74f1f07fb0e34896abcf4c204615fd8e.png" /></p>
-<p>L2TP VPN 连接后,可连3.1<br />
-需要nas防火墙开通白名单,加入L2TP VPN 分配的IP172.31.32.0/24后才能正常连3.7以及上网</p>
-<p>qnap 服务端口大全<br />
-<a title="https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html" href="https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html">https://docs.qnap.com/operating-system/quts-hero/4.5.x/zh-cn/GUID-DC25795F-A720-40C2-9159-66514178E6F6.html</a></p>
-]]></content:encoded>
-        </item>
-    </channel>
-</rss>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
